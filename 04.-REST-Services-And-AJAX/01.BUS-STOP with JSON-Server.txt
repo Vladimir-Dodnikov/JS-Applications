@@ -1,0 +1,18 @@
+https://jsonplaceholder.typicode.com/
+
+1. Правим локален сървър на този JSONplaceHolder:
+	1. cmd в директорията на папките;
+	2. npm install -g json-server.
+2. Създаваме празна папка solution (за всяка задача такава папка)
+	1. cmd в директорията на папката
+	2. npm init (инсталира json package)
+	//Идеята на този json package е, който работи с файла, след като си инсталира node-modules, 
+	//които са прилежащи към приложението, то да работи.
+	3. Пита за name,version,author, git repos ...
+	4. Б cmd пак npm install json-server;
+3. Старт на сървър - в cmd: json-server --watch db.json
+4. Създаваме папка public - html,js,css. (by default json-server WEB принцип)
+	//by default index.html го зарежда автоматично.
+
+
+Изпита ще бъде с firebase!
