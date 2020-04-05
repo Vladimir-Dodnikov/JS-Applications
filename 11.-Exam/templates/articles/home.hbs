@@ -1,0 +1,70 @@
+{{> header}}
+<!-- home (All Articles View) -->
+
+{{#if isLoggedIn}}
+<div class="content">
+    <section class="js">
+        <h2>JavaScript</h2>
+        <div class="articles">
+            {{#each javascript}}
+            <article>
+                <h3>{{title}}</h3>
+                <p>{{content}}</p>
+                <a href="#/articles/details/{{id}}" class="btn details-btn">Details</a>
+            </article>
+            {{else}}
+            <!-- No articles message -->
+            <h3 class="no-articles">No articles yet</h3>
+            {{/each}}
+        </div>
+    </section>
+    <section class="CSharp">
+        <h2>C#</h2>
+        <div class="articles">
+            {{#each cSharp}}
+            <article>
+                <h3>{{this.title}}</h3>
+                <p>{{this.content}}</p>
+                <a href="#/articles/details/{{id}}" class="btn details-btn">Details</a>
+            </article>
+            {{else}}
+            <!-- No articles message -->
+            <h3 class="no-articles">No articles yet</h3>
+            {{/each}}
+        </div>
+    </section>
+    <section class="Java">
+        <h2>Java</h2>
+        <div class="articles">
+            {{#each java}}
+            <article>
+                <h3>{{this.title}}</h3>
+                <p>{{this.content}}</p>
+                <a href="#/articles/details/{{id}}" class="btn details-btn">Details</a>
+            </article>
+            {{else}}
+            <!-- No articles message -->
+            <h3 class="no-articles">No articles yet</h3>
+            {{/each}}
+        </div>
+    </section>
+    <section class="Python">
+        <h2>Python</h2>
+        <div class="articles">
+            {{#each python}}
+            <article>
+                <h3>{{this.title}}</h3>
+                <p>{{this.content}}</p>
+                <a href="#/articles/details/{{id}}" class="btn details-btn">Details</a>
+            </article>
+            {{else}}
+            <!-- No articles message -->
+            <h3 class="no-articles">No articles yet</h3>
+            {{/each}}
+        </div>
+    </section>
+</div>
+
+{{/if}}
+<!-- ./Home (All Articles View) -->
+{{> footer}}

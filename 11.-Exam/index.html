@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <title>Document</title>
+</head>
+
+<body>
+<div id="root"></div>
+
+<!-- Helpers -->
+<!-- ./Helpers -->
+
+<!-- Controllers -->
+<!-- ./Controllers -->
+
+<!-- Models -->
+<!-- ./Models -->
+
+<!-- Node Modules -->
+<script src="./node_modules/jquery/dist/jquery.js"></script>
+<script src="./node_modules/handlebars/dist/handlebars.js"></script>
+<script src="./node_modules/sammy/lib/sammy.js"></script>
+<script src="./node_modules/sammy/lib/plugins/sammy.handlebars.js"></script>
+<script src="./node_modules/popper.js/dist/umd/popper.js"></script>
+<script src="./node_modules/bootstrap/dist/js/bootstrap.js"></script>
+<!-- ./Node Modules -->
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-app.js"></script>
+
+ <!-- Add Firebase products that you want to use -->
+ <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-auth.js"></script>
+ <script src="https://www.gstatic.com/firebasejs/7.13.1/firebase-firestore.js"></script>
+
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyC60-l3fBe1PVO9YC03akd_cqB_o569ru0",
+    authDomain: "exam-20187.firebaseapp.com",
+    databaseURL: "https://exam-20187.firebaseio.com",
+    projectId: "exam-20187",
+    storageBucket: "exam-20187.appspot.com",
+    messagingSenderId: "178978439261",
+    appId: "1:178978439261:web:27463ee66ddca74218cdb4"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
+
+<!-- APP -->
+<script type="module" src="./scripts/app.js"></script>
+<!-- ./APP -->
+
+</body>
+
+</html>
