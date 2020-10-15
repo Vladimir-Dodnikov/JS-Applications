@@ -25,33 +25,33 @@ export default {
             })
         },
         details(ctx) {
-            // console.log(ctx);
+            console.log(ctx);
             const {
                 causeId
             } = ctx.params;
-            // console.log(causeId);
+            console.log(causeId);
 
-            allModels.cause.getById(causeId)
-                .then((resp) => {
-                    // console.log(resp);
-                    const cause = objModifier(resp);
-                    // console.log(cause);
-                    // // ctx.cause = cause;
+            // allModels.cause.getById(causeId)
+            //     .then((resp) => {
+            //         console.log(resp);
+            //         const cause = objModifier(resp);
+            //         console.log(cause);
+            //         // // ctx.cause = cause;
 
-                    Object.keys(cause).forEach((key)=>{
-                        ctx[key] = cause[key];
-                    })
+            //         Object.keys(cause).forEach((key)=>{
+            //             ctx[key] = cause[key];
+            //         })
 
-                    //canDonate form init
-                    // console.log(localeStorage.getItem('userId'));
-                    ctx.canDonate = cause.uid !== localStorage.getItem('userId');
+            //         //canDonate form init
+            //         // console.log(localeStorage.getItem('userId'));
+            //         ctx.canDonate = cause.uid !== localStorage.getItem('userId');
 
-                    extend(ctx).then(function () {
-                        this.partial('../templates/cause/details.hbs')
-                    })
+            //         extend(ctx).then(function () {
+            //             this.partial('../templates/cause/details.hbs')
+            //         })
                 
-                })
-                .catch((e) => console.error(e));
+            //     })
+            //     .catch((e) => console.error(e));
         }
     },
     post: {
